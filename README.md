@@ -4,7 +4,7 @@
 
 Factorio 模组：航空与星际物流塔。用飞机与飞船在同一星球、不同星球之间取送货物与流体，塔内提供数字分区仓储、原版物流与建设机器人平台，以及自动采矿。
 
-当前版本 **0.12.70** ｜ 更新日志：[CHANGELOG.md](CHANGELOG.md)
+当前版本 **0.12.71** ｜ 更新日志：[CHANGELOG.md](CHANGELOG.md)
 
 ## 功能
 
@@ -25,7 +25,7 @@ Factorio 模组：航空与星际物流塔。用飞机与飞船在同一星球�
 
 ## 安装
 
-1. 下载 [release](release/) 目录中的最新发布包，例如 `air-logistics-tower_0.12.70.zip`。
+1. 下载 [release](release/) 目录中的最新发布包，例如 `air-logistics-tower_0.12.71.zip`。
 2. 将 zip **原样**放入 Factorio 的 `mods` 目录，不要解压。
    - Windows：`%APPDATA%\Factorio\mods`
    - Linux：`~/.factorio/mods`

@@ -4,6 +4,10 @@
 
 The internal names of items, entities and technologies never change, so existing saves keep working after an update.
 
+## 0.12.71
+- Late game performance: aircraft routes are now advanced once every 2 ticks (an effective 30 Hz), with two ticks of travel resolved per step, so speed, path and arrival order are unchanged.
+- Reference save (115 towers, 444 aircraft): average update 13.54 to 12.38 ms (-8.6%), improved in all three alternating rounds, minimum frame 9.05 to 6.62 ms.
+- Cost: aircraft positions update every 0.033 s, which can look slightly steppy at high speed, and arrivals resolve up to 1 tick later.
 ## 0.12.70
 - Fixed 0.12.68 onward failing to load on 2.1: `factorio_version` is back to `2.1`, because Factorio requires an exact major.minor match.
 - 2.0-only APIs such as `output_networks` and `get_fluid_filter` are now capability probed and degrade instead of crashing.

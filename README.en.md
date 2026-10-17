@@ -4,7 +4,7 @@
 
 A Factorio mod that adds air and interstellar logistics towers. Cargo planes and ships carry items and fluids within a planet and between planets, while every tower offers numbered storage sections, vanilla logistic and construction robot platforms, and automatic mining.
 
-Current version **0.12.70** | Changelog: [CHANGELOG.en.md](CHANGELOG.en.md)
+Current version **0.12.71** | Changelog: [CHANGELOG.en.md](CHANGELOG.en.md)
 
 ## Features
 
@@ -25,7 +25,7 @@ Current version **0.12.70** | Changelog: [CHANGELOG.en.md](CHANGELOG.en.md)
 
 ## Installation
 
-1. Download the latest package from the [release](release/) folder, for example `air-logistics-tower_0.12.70.zip`.
+1. Download the latest package from the [release](release/) folder, for example `air-logistics-tower_0.12.71.zip`.
 2. Place the zip into Factorio's `mods` folder **without unpacking it**.
    - Windows: `%APPDATA%\Factorio\mods`
    - Linux: `~/.factorio/mods`
