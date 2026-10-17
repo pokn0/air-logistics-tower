@@ -5,6 +5,11 @@
 The internal names of items, entities and technologies never change, so existing saves keep working after an update.
 
 
+## 0.12.84 / 0.12.85
+- 2.0 branch: the hangar is click based again (click the aircraft icon to take one, click + to store one from the backpack) and no longer opens the logistics chest window with its request panel.
+- 2.0 branch: added names for the hidden section containers, so the native grid window no longer shows Unknown key.
+- Sections still open the native item grid (a plain container, grid only); sections set to a robot mode use a logistics chest entity, so their window includes the engine's logistics panel.
+- The 2.1 branch is unchanged.
 ## 0.12.82 / 0.12.83
 - 2.0 branch: each configured section has a chest icon button that opens the engine's own item window (the same grid the base game shows for chests and turrets), so items can be moved by hand.
 - 2.0 branch: the hangar gets the same button, opening the native two slot aircraft grid with the aircraft filters in place.
