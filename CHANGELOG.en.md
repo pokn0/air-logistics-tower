@@ -5,6 +5,12 @@
 The internal names of items, entities and technologies never change, so existing saves keep working after an update.
 
 
+## 0.12.74 / 0.12.75
+- Fixed a render cadence defect introduced in 0.12.71: after aircraft movement moved to every second tick, the draw throttle still compared the raw tick modulo, so aircraft whose phase made the residue odd **never matched a render window** and stopped redrawing for long stretches in adaptive/performance render mode.
+- It now compares the render window index, so each window redraws exactly once at any movement cadence, and the per-aircraft phase still spreads the load.
+- 0.12.74 is the 2.1 branch, 0.12.75 the 2.0 branch; same code, only `factorio_version` and the dependency differ.
+- The 2.0 branch also carries the full port: nine 2.1 only APIs now go through capability probes and compatibility layers; a 40 tower mixed scenario delivered 199200 items over 3600 ticks with every invariant assertion passing.
+
 ## 0.12.73
 - Added a Factorio 2.0.77 build: all nine 2.1 only APIs now go through capability probes and compatibility layers, while 2.1 keeps using the native calls.
 - Covers the GUI inventory event and elements, control behavior output networks, fluid capacity/add/remove, fluid filters, whole-stack inventory transfers and the logistic chest reader.
