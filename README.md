@@ -20,8 +20,8 @@ Factorio 模组：航空与星际物流塔。用飞机与飞船在同一星球�
 
 | 游戏分支 | 下载 | 说明 |
 |---|---|---|
-| 2.1 | `release/air-logistics-tower_0.12.78.zip` | 功能完整 |
-| 2.0 稳定版 | `release/air-logistics-tower_0.12.79.zip` | 同一份代码的 2.0 构建：塔窗口内的物品格子不显示、流体接口不筛选（相关 API 为 2.1 专有），其余功能一致 |
+| 2.1 | `release/air-logistics-tower_0.12.80.zip` | 功能完整 |
+| 2.0 稳定版 | `release/air-logistics-tower_0.12.81.zip` | 同一份代码的 2.0 构建：塔窗口内的物品格子不显示、流体接口不筛选（相关 API 为 2.1 专有），其余功能一致 |
 
 两个包版本号不同，请不要同时放进同一个 `mods` 目录。
 

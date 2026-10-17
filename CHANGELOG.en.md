@@ -5,6 +5,9 @@
 The internal names of items, entities and technologies never change, so existing saves keep working after an update.
 
 
+## 0.12.80 / 0.12.81
+- Fixed the section placement of the new hint text and aircraft tooltip localisation (they had been written under the wrong section and showed as Unknown key).
+- The 2.0 branch offers clickable aircraft icons in the hangar (one aircraft per click) and a hint where the player backpack grid used to be; the 2.1 branch keeps the native inventory grids.
 ## 0.12.78 / 0.12.79
 - 2.0 branch: when the inventory grid cannot be created, the hangar becomes clickable aircraft icons (one aircraft per click) with live counts, and the player backpack area shows a hint.
 - The first failure now writes the engine's reason to the log, which tells whether the element exists at all on that version.
