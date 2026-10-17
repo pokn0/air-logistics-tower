@@ -5,6 +5,10 @@
 The internal names of items, entities and technologies never change, so existing saves keep working after an update.
 
 
+## 0.12.78 / 0.12.79
+- 2.0 branch: when the inventory grid cannot be created, the hangar becomes clickable aircraft icons (one aircraft per click) with live counts, and the player backpack area shows a hint.
+- The first failure now writes the engine's reason to the log, which tells whether the element exists at all on that version.
+- The 2.1 branch is unchanged and keeps the native inventory grids.
 ## 0.12.76 / 0.12.77
 - Fixed the 2.0 tower window missing the player backpack and aircraft slot grids: a 2.1 only event had been mistaken for a 2.1 only element, so the whole class of inventory grids was skipped.
 - Both branches now attempt to create the grids, with a retry that drops 2.1 only options.
