@@ -4,10 +4,6 @@
 
 The internal names of items, entities and technologies never change, so existing saves keep working after an update.
 
-## 0.12.72
-- Added a 2.0 stable build: identical code to the 2.1 release, only `info.json` (`factorio_version` and dependency) differs; verified to load on Factorio 2.0.77.
-- On the 2.0 build the script driven item grids in the tower window are hidden and interface fluid filters do not apply, because those APIs are 2.1 only. Everything else behaves the same, and the 2.1 release is unaffected.
-- The build tool can now produce one package per branch from the same source.
 
 ## 0.12.71
 - Late game performance: aircraft routes are now advanced once every 2 ticks (an effective 30 Hz), with two ticks of travel resolved per step, so speed, path and arrival order are unchanged.
