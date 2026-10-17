@@ -5,6 +5,10 @@
 The internal names of items, entities and technologies never change, so existing saves keep working after an update.
 
 
+## 0.12.88 / 0.12.89
+- 2.0 branch: the hangar take and store buttons moved out of the height limited scroll pane (a clipped button also loses part of its hit area) and an unnecessary pre-check was dropped.
+- 2.0 branch: clicking a hangar button now logs the element name and tower lookup result, so an unresponsive button can be traced.
+- The 2.1 branch is unchanged.
 ## 0.12.86 / 0.12.87
 - 2.0 branch: the hangar take and store buttons no longer fail silently; they move one aircraft or show the reason (no aircraft in the backpack, hangar full, hangar empty, backpack full).
 - 2.0 branch: storing also accepts the aircraft held on the cursor.
