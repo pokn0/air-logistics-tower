@@ -16,9 +16,18 @@ Current version **0.12.71** | Changelog: [CHANGELOG.en.md](CHANGELOG.en.md)
 - **Automatic mining**: mines connected ore patches and springs, plus ocean fluids under the tower, filling free supply sections automatically.
 - **Shared infinite research**: capacity, speed, cargo and fleet research is shared across a force.
 
+## Which package
+
+| Game branch | Download | Notes |
+|---|---|---|
+| 2.1 (mainline, full feature set) | `release/air-logistics-tower_0.12.71.zip` | Everything available |
+| 2.0 stable | `release/air-logistics-tower_0.12.72.zip` | 2.0 build of the same code: the script driven item grids inside the tower window are not shown and interface fluid filters do not apply, everything else works |
+
+The two packages carry different version numbers, so do not put both into the same `mods` folder.
+
 ## Compatibility
 
-- Factorio **2.1.21** or newer (2.1 branch).
+- Factorio **2.1.21** or newer, plus a separate 2.0 stable build (see the table above).
 - The interface is available in **English** and **Simplified Chinese**.
 - On Factorio 2.0 the script driven item grids inside the tower window cannot be shown, because that GUI element was added in 2.1. Every other button, number, filter and readout works.
 - Internal names of items, entities and technologies are unchanged, so existing saves keep working.
