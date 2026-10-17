@@ -5,6 +5,10 @@
 The internal names of items, entities and technologies never change, so existing saves keep working after an update.
 
 
+## 0.12.86 / 0.12.87
+- 2.0 branch: the hangar take and store buttons no longer fail silently; they move one aircraft or show the reason (no aircraft in the backpack, hangar full, hangar empty, backpack full).
+- 2.0 branch: storing also accepts the aircraft held on the cursor.
+- The 2.1 branch is unchanged.
 ## 0.12.84 / 0.12.85
 - 2.0 branch: the hangar is click based again (click the aircraft icon to take one, click + to store one from the backpack) and no longer opens the logistics chest window with its request panel.
 - 2.0 branch: added names for the hidden section containers, so the native grid window no longer shows Unknown key.
