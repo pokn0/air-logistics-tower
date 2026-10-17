@@ -16,14 +16,11 @@ Current version **0.12.71** | Changelog: [CHANGELOG.en.md](CHANGELOG.en.md)
 - **Automatic mining**: mines connected ore patches and springs, plus ocean fluids under the tower, filling free supply sections automatically.
 - **Shared infinite research**: capacity, speed, cargo and fleet research is shared across a force.
 
-## Which package
+## Download
 
-| Game branch | Download | Notes |
-|---|---|---|
-| 2.1 (mainline, full feature set) | `release/air-logistics-tower_0.12.71.zip` | Everything available |
-| 2.0 stable | `release/air-logistics-tower_0.12.72.zip` | 2.0 build of the same code: the script driven item grids inside the tower window are not shown and interface fluid filters do not apply, everything else works |
+**Factorio 2.1**: `release/air-logistics-tower_0.12.71.zip`
 
-The two packages carry different version numbers, so do not put both into the same `mods` folder.
+The 2.0 stable build is not finished yet: it crashes at runtime because of 2.1 only APIs that are still missing. It has been withdrawn from the official releases, see [`release/unsupported-2.0/`](release/unsupported-2.0/). No 2.0 package is offered until a systematic port is done.
 
 ## Compatibility
 
