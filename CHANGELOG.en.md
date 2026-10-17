@@ -1,57 +1,66 @@
-# Changelog
+## 0.12.93
+- Fixed the hangar + button and aircraft icon doing nothing.
 
-**English** | [简体中文](CHANGELOG.md)
+## 0.12.92
+- 2.1 build, same code as 0.12.93.
 
-The internal names of items, entities and technologies never change, so existing saves keep working after an update.
+## 0.12.91
+- Hangar buttons accept any aircraft the tower can park.
 
+## 0.12.90
+- 2.1 build, same code as 0.12.91.
 
-## 0.12.92 / 0.12.93
-- Fixed the hangar + button and aircraft icon doing nothing: `LuaItemStack.transfer_stack` moves FROM its argument INTO the stack it is called on, and the direction had been inverted, so nothing moved.
-- Taking an aircraft now writes straight into the backpack and shrinks the hangar stack by exactly what moved, with no intermediate inventory, so nothing can duplicate or vanish.
-- Verified on a real 2.0 save: backpack 20 -> store twice -> 18 (hangar 2) -> take twice -> 20 (hangar 0), counts balanced.
-## 0.12.90 / 0.12.91
-- 2.0 branch: the hangar + button now accepts any aircraft the tower can park, not only the exact type the button shows.
-- 2.0 branch: every store step is logged (inventory size, matched aircraft, temporary stack, leftover) to trace a transfer that does not happen.
-## 0.12.88 / 0.12.89
-- 2.0 branch: the hangar take and store buttons moved out of the height limited scroll pane (a clipped button also loses part of its hit area) and an unnecessary pre-check was dropped.
-- 2.0 branch: clicking a hangar button now logs the element name and tower lookup result, so an unresponsive button can be traced.
-- The 2.1 branch is unchanged.
-## 0.12.86 / 0.12.87
-- 2.0 branch: the hangar take and store buttons no longer fail silently; they move one aircraft or show the reason (no aircraft in the backpack, hangar full, hangar empty, backpack full).
-- 2.0 branch: storing also accepts the aircraft held on the cursor.
-- The 2.1 branch is unchanged.
-## 0.12.84 / 0.12.85
-- 2.0 branch: the hangar is click based again (click the aircraft icon to take one, click + to store one from the backpack) and no longer opens the logistics chest window with its request panel.
-- 2.0 branch: added names for the hidden section containers, so the native grid window no longer shows Unknown key.
-- Sections still open the native item grid (a plain container, grid only); sections set to a robot mode use a logistics chest entity, so their window includes the engine's logistics panel.
-- The 2.1 branch is unchanged.
-## 0.12.82 / 0.12.83
-- 2.0 branch: each configured section has a chest icon button that opens the engine's own item window (the same grid the base game shows for chests and turrets), so items can be moved by hand.
-- 2.0 branch: the hangar gets the same button, opening the native two slot aircraft grid with the aircraft filters in place.
-- The buttons only appear on versions without script driven inventory grids; the 2.1 branch is unchanged.
-## 0.12.80 / 0.12.81
-- Fixed the section placement of the new hint text and aircraft tooltip localisation (they had been written under the wrong section and showed as Unknown key).
-- The 2.0 branch offers clickable aircraft icons in the hangar (one aircraft per click) and a hint where the player backpack grid used to be; the 2.1 branch keeps the native inventory grids.
-## 0.12.78 / 0.12.79
-- 2.0 branch: when the inventory grid cannot be created, the hangar becomes clickable aircraft icons (one aircraft per click) with live counts, and the player backpack area shows a hint.
-- The first failure now writes the engine's reason to the log, which tells whether the element exists at all on that version.
-- The 2.1 branch is unchanged and keeps the native inventory grids.
-## 0.12.76 / 0.12.77
-- Fixed the 2.0 tower window missing the player backpack and aircraft slot grids: a 2.1 only event had been mistaken for a 2.1 only element, so the whole class of inventory grids was skipped.
-- Both branches now attempt to create the grids, with a retry that drops 2.1 only options.
-- 2.0 has no such event, so drag and drop inside the grids is handled by the engine; the immediate refresh and aircraft type check do not run, and reopening the window shows current counts.
-- 0.12.76 is the 2.1 branch, 0.12.77 the 2.0 branch.
-## 0.12.74 / 0.12.75
-- Fixed a render cadence defect introduced in 0.12.71: after aircraft movement moved to every second tick, the draw throttle still compared the raw tick modulo, so aircraft whose phase made the residue odd **never matched a render window** and stopped redrawing for long stretches in adaptive/performance render mode.
-- It now compares the render window index, so each window redraws exactly once at any movement cadence, and the per-aircraft phase still spreads the load.
-- 0.12.74 is the 2.1 branch, 0.12.75 the 2.0 branch; same code, only `factorio_version` and the dependency differ.
-- The 2.0 branch also carries the full port: nine 2.1 only APIs now go through capability probes and compatibility layers; a 40 tower mixed scenario delivered 199200 items over 3600 ticks with every invariant assertion passing.
+## 0.12.89
+- Hangar buttons moved out of the scroll pane so the click area is not clipped.
+
+## 0.12.88
+- 2.1 build, same code as 0.12.89.
+
+## 0.12.87
+- Hangar actions report the outcome and accept the aircraft on the cursor.
+
+## 0.12.86
+- 2.1 build, same code as 0.12.87.
+
+## 0.12.85
+- Hangar back to click based access; added names for the section containers.
+
+## 0.12.84
+- 2.1 build, same code as 0.12.85.
+
+## 0.12.83
+- 2.0: every configured section opens the native item grid.
+
+## 0.12.82
+- 2.1 build, same code as 0.12.83.
+
+## 0.12.81
+- Fixed the section placement of the new locale entries.
+
+## 0.12.80
+- 2.1 build, same code as 0.12.81.
+
+## 0.12.79
+- 2.0: hangar uses clickable icons with hints.
+
+## 0.12.78
+- 2.1 build, same code as 0.12.79.
+
+## 0.12.77
+- 2.0: the tower window attempts inventory grids.
+
+## 0.12.76
+- 2.1 build, same code as 0.12.77.
+
+## 0.12.75
+- 2.0 build: nine 2.1 only APIs replaced with compatibility layers.
+
+## 0.12.74
+- Fixed the aircraft render cadence so large fleets keep redrawing.
 
 ## 0.12.73
-- Added a Factorio 2.0.77 build: all nine 2.1 only APIs now go through capability probes and compatibility layers, while 2.1 keeps using the native calls.
-- Covers the GUI inventory event and elements, control behavior output networks, fluid capacity/add/remove, fluid filters, whole-stack inventory transfers and the logistic chest reader.
-- On 2.0.77 `run-package`, `run-interstellar`, `run-robots`, `run-hangar` and `run-supply` all pass.
-- On 2.0 the item grids in the tower window are hidden and interface fluid filters do not apply; everything else behaves the same.
+- First Factorio 2.0.77 build.
+
 
 ## 0.12.71
 - Late game performance: aircraft routes are now advanced once every 2 ticks (an effective 30 Hz), with two ticks of travel resolved per step, so speed, path and arrival order are unchanged.
