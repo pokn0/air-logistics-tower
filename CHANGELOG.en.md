@@ -4,6 +4,10 @@
 
 The internal names of items, entities and technologies never change, so existing saves keep working after an update.
 
+## 0.12.70
+- Fixed 0.12.68 onward failing to load on 2.1: `factorio_version` is back to `2.1`, because Factorio requires an exact major.minor match.
+- 2.0-only APIs such as `output_networks` and `get_fluid_filter` are now capability probed and degrade instead of crashing.
+- Recorded a measured late-game baseline (115 towers, 444 aircraft) for future optimisation work.
 ## 0.12.69
 - Fixed an error that stopped the mod from loading on the stable Factorio 2.0 branch.
 
