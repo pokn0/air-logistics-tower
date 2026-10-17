@@ -5,6 +5,11 @@
 The internal names of items, entities and technologies never change, so existing saves keep working after an update.
 
 
+## 0.12.76 / 0.12.77
+- Fixed the 2.0 tower window missing the player backpack and aircraft slot grids: a 2.1 only event had been mistaken for a 2.1 only element, so the whole class of inventory grids was skipped.
+- Both branches now attempt to create the grids, with a retry that drops 2.1 only options.
+- 2.0 has no such event, so drag and drop inside the grids is handled by the engine; the immediate refresh and aircraft type check do not run, and reopening the window shows current counts.
+- 0.12.76 is the 2.1 branch, 0.12.77 the 2.0 branch.
 ## 0.12.74 / 0.12.75
 - Fixed a render cadence defect introduced in 0.12.71: after aircraft movement moved to every second tick, the draw throttle still compared the raw tick modulo, so aircraft whose phase made the residue odd **never matched a render window** and stopped redrawing for long stretches in adaptive/performance render mode.
 - It now compares the render window index, so each window redraws exactly once at any movement cadence, and the per-aircraft phase still spreads the load.
