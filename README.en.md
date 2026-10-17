@@ -18,9 +18,12 @@ Current version **0.12.71** | Changelog: [CHANGELOG.en.md](CHANGELOG.en.md)
 
 ## Download
 
-**Factorio 2.1**: `release/air-logistics-tower_0.12.71.zip`
+| Game branch | Download | Notes |
+|---|---|---|
+| 2.1 | `release/air-logistics-tower_0.12.71.zip` | Full feature set |
+| 2.0 stable | `release/air-logistics-tower_0.12.73.zip` | 2.0 build of the same code: the script driven item grids in the tower window are not shown and interface fluid filters do not apply (those APIs are 2.1 only), everything else works |
 
-The 2.0 stable build is not finished yet: it crashes at runtime because of 2.1 only APIs that are still missing. It has been withdrawn from the official releases, see [`release/unsupported-2.0/`](release/unsupported-2.0/). No 2.0 package is offered until a systematic port is done.
+The two packages carry different version numbers, so do not put both into the same `mods` folder.
 
 ## Compatibility
 

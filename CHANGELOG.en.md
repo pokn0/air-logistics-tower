@@ -5,6 +5,12 @@
 The internal names of items, entities and technologies never change, so existing saves keep working after an update.
 
 
+## 0.12.73
+- Added a Factorio 2.0.77 build: all nine 2.1 only APIs now go through capability probes and compatibility layers, while 2.1 keeps using the native calls.
+- Covers the GUI inventory event and elements, control behavior output networks, fluid capacity/add/remove, fluid filters, whole-stack inventory transfers and the logistic chest reader.
+- On 2.0.77 `run-package`, `run-interstellar`, `run-robots`, `run-hangar` and `run-supply` all pass.
+- On 2.0 the item grids in the tower window are hidden and interface fluid filters do not apply; everything else behaves the same.
+
 ## 0.12.71
 - Late game performance: aircraft routes are now advanced once every 2 ticks (an effective 30 Hz), with two ticks of travel resolved per step, so speed, path and arrival order are unchanged.
 - Reference save (115 towers, 444 aircraft): average update 13.54 to 12.38 ms (-8.6%), improved in all three alternating rounds, minimum frame 9.05 to 6.62 ms.
