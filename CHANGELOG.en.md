@@ -5,6 +5,10 @@
 The internal names of items, entities and technologies never change, so existing saves keep working after an update.
 
 
+## 0.12.92 / 0.12.93
+- Fixed the hangar + button and aircraft icon doing nothing: `LuaItemStack.transfer_stack` moves FROM its argument INTO the stack it is called on, and the direction had been inverted, so nothing moved.
+- Taking an aircraft now writes straight into the backpack and shrinks the hangar stack by exactly what moved, with no intermediate inventory, so nothing can duplicate or vanish.
+- Verified on a real 2.0 save: backpack 20 -> store twice -> 18 (hangar 2) -> take twice -> 20 (hangar 0), counts balanced.
 ## 0.12.90 / 0.12.91
 - 2.0 branch: the hangar + button now accepts any aircraft the tower can park, not only the exact type the button shows.
 - 2.0 branch: every store step is logged (inventory size, matched aircraft, temporary stack, leftover) to trace a transfer that does not happen.
