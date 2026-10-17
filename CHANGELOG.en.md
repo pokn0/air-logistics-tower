@@ -5,6 +5,9 @@
 The internal names of items, entities and technologies never change, so existing saves keep working after an update.
 
 
+## 0.12.90 / 0.12.91
+- 2.0 branch: the hangar + button now accepts any aircraft the tower can park, not only the exact type the button shows.
+- 2.0 branch: every store step is logged (inventory size, matched aircraft, temporary stack, leftover) to trace a transfer that does not happen.
 ## 0.12.88 / 0.12.89
 - 2.0 branch: the hangar take and store buttons moved out of the height limited scroll pane (a clipped button also loses part of its hit area) and an unnecessary pre-check was dropped.
 - 2.0 branch: clicking a hangar button now logs the element name and tower lookup result, so an unresponsive button can be traced.
