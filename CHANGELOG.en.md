@@ -5,6 +5,10 @@
 The internal names of items, entities and technologies never change, so existing saves keep working after an update.
 
 
+## 0.12.82 / 0.12.83
+- 2.0 branch: each configured section has a chest icon button that opens the engine's own item window (the same grid the base game shows for chests and turrets), so items can be moved by hand.
+- 2.0 branch: the hangar gets the same button, opening the native two slot aircraft grid with the aircraft filters in place.
+- The buttons only appear on versions without script driven inventory grids; the 2.1 branch is unchanged.
 ## 0.12.80 / 0.12.81
 - Fixed the section placement of the new hint text and aircraft tooltip localisation (they had been written under the wrong section and showed as Unknown key).
 - The 2.0 branch offers clickable aircraft icons in the hangar (one aircraft per click) and a hint where the player backpack grid used to be; the 2.1 branch keeps the native inventory grids.
