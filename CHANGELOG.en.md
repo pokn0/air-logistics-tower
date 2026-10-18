@@ -1,3 +1,9 @@
+## 0.12.95
+- Blueprints now save belt and fluid filters; planet tower fluid rules had been left out.
+- When the event carries no entity mapping, towers are matched by position so the tags are still written.
+
+## 0.12.94
+- 2.1 build, same code as 0.12.95.
 ## 0.12.93
 - Fixed the hangar + button and aircraft icon doing nothing.
 
