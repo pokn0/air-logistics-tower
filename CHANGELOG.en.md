@@ -1,3 +1,8 @@
+## 0.14.5
+- 2.0 build, same code as 0.14.4.
+
+## 0.14.4
+- The partition tab shows the tower diagram again with items and fluids together; the ship tower fluid interfaces moved onto the hull and the circuit page only appears once a wire is attached.
 ## 0.14.3
 - 2.0 build, same code as 0.14.2.
 
