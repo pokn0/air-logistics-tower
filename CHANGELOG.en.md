@@ -1,3 +1,9 @@
+## 0.14.1
+- 2.0 build, same code as 0.14.0.
+
+## 0.14.0
+- Reworked the tower window into three tabs (partitions, logistics, circuits); partitions are a list with one editor form on the right.
+- The title bar shows a coloured running state and the common values are grouped together.
 ## 0.12.99
 - Fixed air towers gaining fluid interfaces after copy, cut or blueprint; empty rules are no longer stored and affected towers clean up automatically.
 
