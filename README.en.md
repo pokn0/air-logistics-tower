@@ -20,8 +20,8 @@ Current version **0.12.71** | Changelog: [CHANGELOG.en.md](CHANGELOG.en.md)
 
 | Game branch | Download | Notes |
 |---|---|---|
-| 2.1 | `release/air-logistics-tower_0.12.96.zip` | Full feature set |
-| 2.0 stable | `release/air-logistics-tower_0.12.97.zip` | 2.0 build of the same code: the script driven item grids in the tower window are not shown and interface fluid filters do not apply (those APIs are 2.1 only), everything else works |
+| 2.1 | `release/air-logistics-tower_0.12.98.zip` | Full feature set |
+| 2.0 stable | `release/air-logistics-tower_0.12.99.zip` | 2.0 build of the same code: the script driven item grids in the tower window are not shown and interface fluid filters do not apply (those APIs are 2.1 only), everything else works |
 
 The two packages carry different version numbers, so do not put both into the same `mods` folder.
 

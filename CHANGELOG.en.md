@@ -1,3 +1,8 @@
+## 0.12.99
+- Fixed air towers gaining fluid interfaces after copy, cut or blueprint; empty rules are no longer stored and affected towers clean up automatically.
+
+## 0.12.98
+- 2.1 build, same code as 0.12.99.
 ## 0.12.97
 - Fixed blank hangar and backpack grids: GUI elements are added with method syntax, since passing the parent explicitly is rejected on some engine versions.
 - A created grid now verifies that its inventory really bound; if not, it is replaced by clickable icons instead of leaving an empty area.
