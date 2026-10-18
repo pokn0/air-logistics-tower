@@ -1,3 +1,8 @@
+## 0.14.3
+- 2.0 build, same code as 0.14.2.
+
+## 0.14.2
+- Fixed the window buttons and inputs not reacting: the window event registrations were overridden by a later one and are now forwarded from a single entry point.
 ## 0.14.1
 - 2.0 build, same code as 0.14.0.
 
