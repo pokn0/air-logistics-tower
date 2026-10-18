@@ -1,3 +1,9 @@
+## 0.12.97
+- Fixed blank hangar and backpack grids: GUI elements are added with method syntax, since passing the parent explicitly is rejected on some engine versions.
+- A created grid now verifies that its inventory really bound; if not, it is replaced by clickable icons instead of leaving an empty area.
+
+## 0.12.96
+- 2.1 build, same code as 0.12.97.
 ## 0.12.95
 - Blueprints now save belt and fluid filters; planet tower fluid rules had been left out.
 - When the event carries no entity mapping, towers are matched by position so the tags are still written.
